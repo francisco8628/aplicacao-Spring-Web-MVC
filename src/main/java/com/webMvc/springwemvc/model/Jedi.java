@@ -1,7 +1,10 @@
 package com.webMvc.springwemvc.model;
 
-public class Jedi {
+import org.springframework.validation.annotation.Validated;
 
+public class Jedi {
+    
+	
 	private String name;
 	private String lastName;
 
@@ -13,6 +16,12 @@ public class Jedi {
    
 	
 	
+	public Jedi() {
+		// TODO Auto-generated constructor stub
+	}
+
+
+
 	public String getName() {
 		return name;
 	}
