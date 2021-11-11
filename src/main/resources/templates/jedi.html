@@ -17,15 +17,10 @@
         <th>NAME</th>
         <th>LASTNAME</th>
     </tr>
-    <tr th:each="jedi : ${allJedi}">
-        <td th:text="${jedi.id}"></td>
+    <tr th:each="jedi : ${allJedi}">        
         <td th:text="${jedi.name}"> </td>
         <td th:text="${jedi.lastName}"> </td>
-        <td>
-            <a th:href="@{/jedi/__${jedi.id}__/delete}" onClick="return confirm('Delete?')">Delete</a>
-            <a th:href="@{/jedi/__${jedi.id}__/update}">Update</a>
-        </td>
-
+       
     </tr>
 </table>
 
